@@ -89,7 +89,7 @@ Format:
 
   const data = await res.json();
   document.getElementById('output').textContent =
-    data.content?.[0]?.text || 'Error generating story';
+  JSON.stringify(data, null, 2);
 }
 </script>
 
